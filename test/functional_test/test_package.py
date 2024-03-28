@@ -1,6 +1,5 @@
 def test_pkg_import():
     try:
-
         import HousePricePrediction  # noqa
     except Exception as e:
         assert False, (

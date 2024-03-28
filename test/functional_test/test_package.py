@@ -3,16 +3,6 @@ from HousePricePrediction import ingest_data, score, train
 
 
 def test_pkg_import():
-    try:
-        import HousePricePrediction  # noqa
-    except Exception as e:
-        assert False, (
-            f"Error: {e}. "
-            " mypackage package is not \
-                imported and installed correctly."
-
-
-def test_pkg_import():
     assert HousePricePrediction is not None
     assert ingest_data is not None
     assert hasattr(ingest_data, "fetch_housing_data")
